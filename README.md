@@ -184,7 +184,7 @@ Even if it looks like the model is working great, it would be interesting to see
 
 ## Movie Recommender Web Application
 
-Link to the website: [your-movie.heroku.com](your-movie.heroku.com)
+Link to the website: [your-movie.heroku.com](https://your-movie.herokuapp.com/)
 
 ### Abstract
 I created a website running on Flask/Heroku where users can insert their favorite movies and get recommendations related to their specific taste.
