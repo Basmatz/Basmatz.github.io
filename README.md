@@ -1,6 +1,6 @@
-# Data Science Portfolio 2020
+# Data Science Portfolio 2021
 
-##### In the following I want to present some of the projects I did in the last months and elaborate on the results.
+##### In the following I want to present some of the projects I did in the last months, give some insight in how I work and elaborate on the results.
 
 Content:
 
@@ -184,9 +184,11 @@ Even if it looks like the model is working great, it would be interesting to see
 
 ## Movie Recommender Web Application
 
+Link to the website: [your-movie.heroku.com](your-movie.heroku.com)
+
 ### Abstract
 I created a website running on Flask/Heroku where users can insert their favorite movies and get recommendations related to their specific taste.
-The results are calculated by a weighted combination of content- and collaborative filtering using the MovieLens database consisting of 25 million user ratings and metadata.
+The results are calculated by a weighted combination of content- and collaborative filtering using the [MovieLens](https://grouplens.org/datasets/movielens/) database consisting of 25 million user ratings and metadata.
 
 ### Technology Stack & Project Set Up
 ![Techstack_movie](graphics/Techstack_movie.png)
