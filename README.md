@@ -10,7 +10,10 @@ Content:
     + [Models](#models)
     + [Outcome](#outcome)
 - [YourMovie - Movie recommender website based on content- and collaborative-filtering](#YourMovie)
-
+    + [Technology Stack & Project Set Up](#technology-stack)
+    + [The Data](#the-data)
+    + [Models](#models)
+    + [Outcome](#outcome)
 
 
 
@@ -22,7 +25,6 @@ For my graduation project at [SPICED Academy](https://www.spiced-academy.com/en/
 to train different regression and classification models, which were able to predict the popularity of new songs with impressive results.
 
 ### Technology Stack
-& Project Set Up
 ![Techstack](graphics/techstack.png)
 Using the Spotipy Python library I was able to access the Spotify API and pull song features and analysis data for 233k songs.
 Since the bandwidth of the Spotify API is being throttled down in relation to the amount of requests, the application was running on a AWS EC2 machine for several days, writing the data into a MongoDB database.
@@ -196,7 +198,7 @@ Even if it looks like the model is working great, it would be interesting to see
 I created a [website](https://your-movie.herokuapp.com/) running on Flask/Heroku where users can insert their favorite movies and get recommendations related to their specific taste.
 The results are calculated by a weighted combination of content- and collaborative filtering using the [MovieLens](https://grouplens.org/datasets/movielens/) database consisting of 25 million user ratings and metadata.
 
-### Technology Stack & Project Set Up
+### Technology Stack
 ![Techstack_movie](graphics/Techstack_movie.png)
 
 Using the Spotipy Python library I was able to access the Spotify API and pull song features and analysis data for 233k songs.
