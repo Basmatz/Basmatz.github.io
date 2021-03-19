@@ -4,33 +4,33 @@
 
 Content:
 
-- [Popmodel - Predicting the popularity of songs on Spotify](#popmodel)
-    + [Technology Stack & Project Set Up](#1.2-technology-stack)
-    + [The Data](#1.3-the-data)
-    + [Models](#1.4-models)
-    + [Outcome](#1.5-outcome)
-- [YourMovie - Movie recommender website based on content- and collaborative-filtering](#yourmovie)
-    + [Technology Stack & Project Set Up](#2.1-technology-stack)
-    + [The Data](#2.2-the-data)
-    + [The ABC](#abcd)
-    + [Models](#2.3-models)
-    + [Outcome](#2.4-outcome)
+- [Popmodel - Predicting the popularity of songs on Spotify](#pop)
+    + [Technology Stack & Project Set Up](#tech_pop)
+    + [The Data](#data_pop)
+    + [Models](#models_pop)
+    + [Outcome](#outcome_pop)
+- [YourMovie - Movie recommender website based on content- and collaborative-filtering](#movie)
+    + [Technology Stack & Project Set Up](#tech_movie)
+    + [The Data](#data_movie)
+    + [Models](#models_movie)
+    + [Outcome](#outcome_movie)
 
+<a name="pop"></a>
 ## Popmodel
 ### Predicting the popularity of songs on Spotify
-
-### 1.1 Abstract
+### Abstract
 For my graduation project at [SPICED Academy](https://www.spiced-academy.com/en/program/data-science) I built an application that pulls song features from the Spotify API
 to train different regression and classification models, which were able to predict the popularity of new songs with impressive results.
 
-### 1.2 Technology Stack
+<a name="tech_pop"></a>
+### Technology Stack
 ![Techstack](graphics/techstack.png)
 Using the Spotipy Python library I was able to access the Spotify API and pull song features and analysis data for 233k songs.
 Since the bandwidth of the Spotify API is being throttled down in relation to the amount of requests, the application was running on a AWS EC2 machine for several days, writing the data into a MongoDB database.
 After data wrangling and feature engineering I built different regression and classification models with the scikit-learn, XGBoost and Keras libraries.
 
-
-### 1.3 The Data
+<a name="data_pop"></a>
+### The Data
 After creating the dataset and exploring the data I decided to combine my data with an [older dataset](https://www.kaggle.com/zaheenhamidani/ultimate-spotify-tracks-db),
 since I was not satisfied with the popularity distribution in the data I pulled.
 
@@ -63,8 +63,8 @@ Additionally for fun I created a word cloud with the ten thousand most occurring
 
 ![cloud_1](graphics/cloud_1.png)
 
-
-### 1.4 Models
+<a name="models_pop"></a>
+### Models
 I built different linear regression and classification models respectively with scikit-learn, XGBoost and Keras to find out the best method to predict the success of a song.
 
 #### Linear Regression
@@ -143,7 +143,7 @@ XGBClassifier(seed=27, objective='multi:softprob', colsample_bytree=0.8, subsamp
                        sampling_method="gradient_based", random_state=3, n_jobs=-1, tree_method='gpu_hist',
                        predictor= 'gpu_predictor', verbosity=3)
 ```
-<a name="abcd"></a>
+
 The FFN is slightly less accurate but still achieves a f1 score of 78% and is set up with an input layer with 4000 neurons,
 an hidden layer with 100 neurons and an outputlayer with a softmax activation to predict the probabilites of the three classes:
 
@@ -181,23 +181,26 @@ as we can see here in the comparison between compiling with and without regulari
 
 ![fnn_l2_1](graphics/fnn_l2.png)
 
-### 1.5 Outcome
+<a name="outcome_pop"></a>
+### Outcome
 
 I actually didn't expect the results of this project to be that positive,
 since I thought the immeasurable emotional factor of music is the biggest influence that determines its popularity.
 In my opinion the linear regression is the best model for this, since it provides a more accurate and relatable estimation of the popularity compared to the classification approach.
 Even if it looks like the model is working great, it would be interesting to see how it works with another dataset, since I had to remove all songs with zero popularity and there are only few very popular samples.
 
-## 2. YourMovie
+<a name="movie"></a>
+## YourMovie
 ### Movie recommender website based on content- and collaborative-filtering
 
 [your-movie.heroku.com](https://your-movie.herokuapp.com/)
 
-### 2.1 Abstract
+### Abstract
 I created a [website](https://your-movie.herokuapp.com/) running on Flask/Heroku where users can insert their favorite movies and get recommendations related to their specific taste.
 The results are calculated by a weighted combination of content- and collaborative filtering using the [MovieLens](https://grouplens.org/datasets/movielens/) database consisting of 25 million user ratings and metadata.
 
-### 2.2 Technology Stack
+<a name="tech_movie"></a>
+### Technology Stack
 ![Techstack_movie](graphics/Techstack_movie.png)
 
 Using the Spotipy Python library I was able to access the Spotify API and pull song features and analysis data for 233k songs.
@@ -205,6 +208,8 @@ Since the bandwidth of the Spotify API is quite slow in relation to the amount o
 on a AWS EC2 machine for several days, writing the data into a MongoDB database. After feature engineering I built
 different regression and classification models with the scikit-learn, XGBoost and Keras libraries.
 As a last step I set up an interactive application with Flask, running on Heroku, to demonstrate and compare the different models.
+
+<a name="data_movie"></a>
 ### The Data
 
 .
