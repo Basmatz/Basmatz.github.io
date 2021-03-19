@@ -5,7 +5,7 @@
 Content:
 
 - [Popmodel - Predicting the popularity of songs on Spotify](#popmodel)
-    + [Technology Stack & Project Set Up](#technology-stack-&-project-set-up)
+    + [Technology Stack & Project Set Up](#technology-stack)
     + [The Data](#the-data)
     + [Models](#models)
     + [Outcome](#outcome)
@@ -21,7 +21,8 @@ Content:
 For my graduation project at [SPICED Academy](https://www.spiced-academy.com/en/program/data-science) I built an application that pulls song features from the Spotify API
 to train different regression and classification models, which were able to predict the popularity of new songs with impressive results.
 
-### Technology Stack & Project Set Up
+### Technology Stack
+& Project Set Up
 ![Techstack](graphics/techstack.png)
 Using the Spotipy Python library I was able to access the Spotify API and pull song features and analysis data for 233k songs.
 Since the bandwidth of the Spotify API is being throttled down in relation to the amount of requests, the application was running on a AWS EC2 machine for several days, writing the data into a MongoDB database.
