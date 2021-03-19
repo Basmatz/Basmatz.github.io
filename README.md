@@ -5,33 +5,33 @@
 Content:
 
 - [Popmodel - Predicting the popularity of songs on Spotify](#popmodel)
-    + [Technology Stack & Project Set Up](#technology-stack)
-    + [The Data](#the-data)
-    + [Models](#models)
-    + [Outcome](#outcome)
-- [YourMovie - Movie recommender website based on content- and collaborative-filtering](#YourMovie)
-    + [Technology Stack & Project Set Up](#technology-stack)
-    + [The Data](#the-data)
-    + [Models](#models)
-    + [Outcome](#outcome)
+    + [Technology Stack & Project Set Up](#1.2-technology-stack)
+    + [The Data](#1.3-the-data)
+    + [Models](#1.4-models)
+    + [Outcome](#1.5-outcome)
+- [YourMovie - Movie recommender website based on content- and collaborative-filtering](#yourmovie)
+    + [Technology Stack & Project Set Up](#2.1-technology-stack)
+    + [The Data](#2.2-the-data)
+    + [Models](#2.3-models)
+    + [Outcome](#2.4-outcome)
 
 
 
 ## Popmodel
 ### Predicting the popularity of songs on Spotify
 
-### Abstract
+### 1.1 Abstract
 For my graduation project at [SPICED Academy](https://www.spiced-academy.com/en/program/data-science) I built an application that pulls song features from the Spotify API
 to train different regression and classification models, which were able to predict the popularity of new songs with impressive results.
 
-### Technology Stack
+### 1.2 Technology Stack
 ![Techstack](graphics/techstack.png)
 Using the Spotipy Python library I was able to access the Spotify API and pull song features and analysis data for 233k songs.
 Since the bandwidth of the Spotify API is being throttled down in relation to the amount of requests, the application was running on a AWS EC2 machine for several days, writing the data into a MongoDB database.
 After data wrangling and feature engineering I built different regression and classification models with the scikit-learn, XGBoost and Keras libraries.
 
 
-### The Data
+### 1.3 The Data
 After creating the dataset and exploring the data I decided to combine my data with an [older dataset](https://www.kaggle.com/zaheenhamidani/ultimate-spotify-tracks-db),
 since I was not satisfied with the popularity distribution in the data I pulled.
 
@@ -65,7 +65,7 @@ Additionally for fun I created a word cloud with the ten thousand most occurring
 ![cloud_1](graphics/cloud_1.png)
 
 
-### Models
+### 1.4 Models
 I built different linear regression and classification models respectively with scikit-learn, XGBoost and Keras to find out the best method to predict the success of a song.
 
 #### Linear Regression
@@ -182,23 +182,23 @@ as we can see here in the comparison between compiling with and without regulari
 
 ![fnn_l2_1](graphics/fnn_l2.png)
 
-### Outcome
+### 1.5 Outcome
 
 I actually didn't expect the results of this project to be that positive,
 since I thought the immeasurable emotional factor of music is the biggest influence that determines its popularity.
 In my opinion the linear regression is the best model for this, since it provides a more accurate and relatable estimation of the popularity compared to the classification approach.
 Even if it looks like the model is working great, it would be interesting to see how it works with another dataset, since I had to remove all songs with zero popularity and there are only few very popular samples.
 
-## YourMovie
+## 2. YourMovie
 ### Movie recommender website based on content- and collaborative-filtering
 
 [your-movie.heroku.com](https://your-movie.herokuapp.com/)
 
-### Abstract
+### 2.1 Abstract
 I created a [website](https://your-movie.herokuapp.com/) running on Flask/Heroku where users can insert their favorite movies and get recommendations related to their specific taste.
 The results are calculated by a weighted combination of content- and collaborative filtering using the [MovieLens](https://grouplens.org/datasets/movielens/) database consisting of 25 million user ratings and metadata.
 
-### Technology Stack
+### 2.2 Technology Stack
 ![Techstack_movie](graphics/Techstack_movie.png)
 
 Using the Spotipy Python library I was able to access the Spotify API and pull song features and analysis data for 233k songs.
