@@ -4,7 +4,7 @@
 
 Content:
 
-- [Popmodel - Predicting the popularity of songs on Spotify](#Abstract)
+- [Popmodel - Predicting the popularity of songs on Spotify](#abstract)
 
 - YourMovie - Movie recommender website based on content- and collaborative-filtering
 
@@ -13,7 +13,7 @@ Content:
 
 ## Popmodel - Predicting the popularity of songs on Spotify
 
-### Abstract
+## Abstract
 For my graduation project at [SPICED Academy](https://www.spiced-academy.com/en/program/data-science) I built an application that pulls song features from the Spotify API
 to train different regression and classification models, which were able to predict the popularity of new songs with impressive results.
 
