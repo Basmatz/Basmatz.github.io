@@ -12,10 +12,9 @@ Content:
 - [YourMovie - Movie recommender website based on content- and collaborative-filtering](#yourmovie)
     + [Technology Stack & Project Set Up](#2.1-technology-stack)
     + [The Data](#2.2-the-data)
+    + [The ABC](#abcd)
     + [Models](#2.3-models)
     + [Outcome](#2.4-outcome)
-
-
 
 ## Popmodel
 ### Predicting the popularity of songs on Spotify
@@ -144,7 +143,7 @@ XGBClassifier(seed=27, objective='multi:softprob', colsample_bytree=0.8, subsamp
                        sampling_method="gradient_based", random_state=3, n_jobs=-1, tree_method='gpu_hist',
                        predictor= 'gpu_predictor', verbosity=3)
 ```
-
+<a name="abcd"></a>
 The FFN is slightly less accurate but still achieves a f1 score of 78% and is set up with an input layer with 4000 neurons,
 an hidden layer with 100 neurons and an outputlayer with a softmax activation to predict the probabilites of the three classes:
 
