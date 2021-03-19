@@ -4,16 +4,20 @@
 
 Content:
 
-- [Popmodel - Predicting the popularity of songs on Spotify](#popmodel---predicting-the-popularity-of-songs-on-spotify)
+- [Popmodel - Predicting the popularity of songs on Spotify](#popmodel)
+    + [Technology Stack & Project Set Up](#technology-stack-&-project-set-up)
+    + [The Data](#the-data)
+    + [Models](#models)
+    + [Outcome](#outcome)
+- [YourMovie - Movie recommender website based on content- and collaborative-filtering](#YourMovie)
 
-- YourMovie - Movie recommender website based on content- and collaborative-filtering
 
 
 
+## Popmodel
+### Predicting the popularity of songs on Spotify
 
-## Popmodel - Predicting the popularity of songs on Spotify
-
-## Abstract
+### Abstract
 For my graduation project at [SPICED Academy](https://www.spiced-academy.com/en/program/data-science) I built an application that pulls song features from the Spotify API
 to train different regression and classification models, which were able to predict the popularity of new songs with impressive results.
 
@@ -182,12 +186,13 @@ since I thought the immeasurable emotional factor of music is the biggest influe
 In my opinion the linear regression is the best model for this, since it provides a more accurate and relatable estimation of the popularity compared to the classification approach.
 Even if it looks like the model is working great, it would be interesting to see how it works with another dataset, since I had to remove all songs with zero popularity and there are only few very popular samples.
 
-## Movie Recommender Web Application
+## YourMovie
+### Movie recommender website based on content- and collaborative-filtering
 
-Link to the website: [your-movie.heroku.com](https://your-movie.herokuapp.com/)
+[your-movie.heroku.com](https://your-movie.herokuapp.com/)
 
 ### Abstract
-I created a website running on Flask/Heroku where users can insert their favorite movies and get recommendations related to their specific taste.
+I created a [website](https://your-movie.herokuapp.com/) running on Flask/Heroku where users can insert their favorite movies and get recommendations related to their specific taste.
 The results are calculated by a weighted combination of content- and collaborative filtering using the [MovieLens](https://grouplens.org/datasets/movielens/) database consisting of 25 million user ratings and metadata.
 
 ### Technology Stack & Project Set Up
