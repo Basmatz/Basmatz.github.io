@@ -13,7 +13,7 @@
     + [Outcome](#outcome_pop)
     
 
-- [YourMovie - Movie recommender website based on content- and collaborative-filtering](#movie)
+- [YourMovie - An online movie recommender system](#movie)
     + [Technology Stack & Project Set Up](#tech_movie)
     + [The Data](#data_movie)
     + [Candidate Generation](#generation_movie)
