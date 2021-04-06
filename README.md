@@ -1,6 +1,6 @@
 # Data Science Portfolio 2021
 
-##### In the following I want to present some of the projects I did in the last months, give some insight in how I work and elaborate on the results.
+##### In the following I want to present some of the projects I did in the last months, give some insight in how I work and elaborate on the results. You can find the well documented code here on [my github page](https://github.com/Basmatz/my_portfolio).
 
 ### Content:
 
@@ -11,7 +11,7 @@
       + [Linear Regression](#regression)
       + [Classifcation](#classification)
     + [Outcome](#outcome_pop)
-    
+
 
 - [YourMovie - An online movie recommender system](#movie)
     + [Technology Stack & Project Set Up](#tech_movie)
