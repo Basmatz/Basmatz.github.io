@@ -1,6 +1,6 @@
 # Data Science Portfolio 2021
 
-##### In the following I want to present some of the projects I did in the last months, give some insight in how I work and elaborate on the results. You can find the well documented code here on [my github page](https://github.com/Basmatz/my_portfolio).
+##### In the following I want to present some of the projects I did in the last months, give some insight in how I work and elaborate on the results. You can find the well documented code here on [my github page](https://github.com/Basmatz/Basmatz.github.io).
 
 ### Content:
 
