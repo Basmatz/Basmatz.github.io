@@ -11,8 +11,7 @@
       + [Linear Regression](#regression)
       + [Classifcation](#classification)
     + [Outcome](#outcome_pop)
-
-
+    <br/><br/>
 - [YourMovie - An online movie recommender system](#movie)
     + [Technology Stack & Project Set Up](#tech_movie)
     + [The Data](#data_movie)
