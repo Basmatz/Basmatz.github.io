@@ -221,7 +221,7 @@ The results are calculated by a weighted combination of content based- and colla
 ### Technology Stack
 ![Techstack_movie](graphics/Techstack_movie.png)
 
-After data wrangling & feature engineering in Pandas I computed two matrices for content- and collaborative filtering and exported them as binary pickle files so the application won't have to re-calculate
+After data wrangling & feature engineering in Pandas I computed two matrices for content-based and collaborative filtering and exported them as binary pickle files so the application won't have to re-calculate
 the matrices every time again. To achieve better results I used a weighted combination of different similarity measures as cosine similarity from the sklearn library and the dot product from numpy.
 I used Twitter's bootstrap CSS framework to set up a basic website while the recommender system is running on Flask, a micro web framework.
 Finally I'm running the application on Heroku, a cloud platform service, so the recommender is accessible from the www.
@@ -280,7 +280,8 @@ I decided to scale the results of both filtering methods so I could compare them
 <br/><br/> 
 <a name="webapp_movie"></a>
 ### Web Application
-Creating and explaining this recommender is one thing, but to be able to let others trying it out was something I definitely wanted to achieve aswell. To make this possible I needed a website, a webfamework where my recommender system could run on and a platform to host this framework.
+Creating and explaining this recommender is one thing, but to be able to let others trying it out was something I definitely wanted to achieve aswell. Very crucial to get this working, I had to export the final matrices as binary files so I didn't had to re-run the whole code which takes an hour to complete.
+I exported the calculated matrices with the pickle library so I can skip this step from now on. To make the application interactive I needed a website, a webfamework where my recommender system could run on and a platform to host this framework.
 
 For the website I used the open-source HTML/CSS framework from Twitter called [Bootstrap](https://getbootstrap.com/), since this is a quick way to create the front end of a website. The website aswell as the python code for the recommender is running on [Flask](https://flask.palletsprojects.com/en/1.1.x/) which creates a local web application. This webapp I'm hosting on [Heroku](https://www.heroku.com/home),
 a cloud-based platform as a service to be able to access the website online.
