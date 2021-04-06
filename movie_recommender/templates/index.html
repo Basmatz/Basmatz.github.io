@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="main-splash">
+
+    <h1>Welcome to <span id="highlight">yourMovie</span>.</h1>
+    <p><i>A movie recommender based on collaborative and content-based filtering</i></p>
+
+    <div class="button-container">
+
+
+      <button onclick="location.href='/recommender'" type="submit" class="js-btn btn btn-light m-5">
+        Find your movie
+      </button>
+
+    </div>
+
+</section>
+
+
+{% endblock %}

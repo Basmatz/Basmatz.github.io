@@ -1,0 +1,55 @@
+/* Using Spot Palette from https://mycolor.space/?hex=%2362003C&sub=1:
+- primary color: #62003C
+- secondary: #983D6B
+- third: #FFE4F8
+- fourth: #00C9B6 */
+
+#logo {
+  height: 50px;
+}
+
+.main-splash {
+  background-color: #eeb07e;
+  height: 100vh;
+  color: #ffebd1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#highlight {
+  color: #bc7100;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.merp {
+  margin-bottom: 20px;
+}
+
+.btn-danger {
+  background-color: #4385ea;
+}
+
+.recommendations {
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center
+}
+
+
+.flex0{display:block;width:100%;height:calc(1.5em + .75rem + 2px);padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+.flex1{display:block;width:100%;height:calc(1.5em + .75rem + 2px);padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+.flex2{display:block;width:100%;height:calc(1.5em + .75rem + 2px);padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+.flex3{display:block;width:100%;height:calc(1.5em + .75rem + 2px);padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+.flex4{display:block;width:100%;height:calc(1.5em + .75rem + 2px);padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}

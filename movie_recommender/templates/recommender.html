@@ -1,0 +1,101 @@
+{% block head %}
+<link href="static/css/jquery.flexdatalist.min.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="/results">
+  <section class="main-splash">
+
+    <h3 class="merp">What are your favorite movies?</h3>
+
+      <div class="row">
+          <div class="col">
+              <label for="movie">Enter up to five of your favorite movies and get your recommendations</label>
+          </div>
+      </div>
+
+      <div class="row">
+      <div class="col">
+          <input type="text" name="movie1" placeholder="Movie 1"
+          class="flexdatalist"
+          data-min-length="1"
+          data-searchContain="true"
+          data-selection-required='1'
+          data-data='static/movies.json'
+          data-search-in='title'
+          data-value-property='movieId'
+          data-search-by-word='false'
+          required>
+      </div>
+    </div>
+
+      <div class="row">
+      <div class="col">
+          <input type="text" name="movie2" placeholder="Movie 2"
+          class="flexdatalist"
+          data-min-length="1"
+          data-searchContain="true"
+          data-selection-required='1'
+          data-data='static/movies.json'
+          data-search-in='title'
+          data-value-property='movieId'
+          data-search-by-word='false'>
+      </div>
+    </div>
+
+            <div class="row">
+      <div class="col">
+          <input type="text" name="movie3" placeholder="Movie 3"
+          class="flexdatalist"
+          data-min-length="1"
+          data-searchContain="true"
+          data-selection-required='1'
+          data-data='static/movies.json'
+          data-search-in='title'
+          data-value-property='movieId'
+          data-search-by-word='false'>
+      </div>
+    </div>
+
+            <div class="row">
+      <div class="col">
+          <input type="text" name="movie4" placeholder="Movie 4"
+          class="flexdatalist"
+          data-min-length="1"
+          data-searchContain="true"
+          data-selection-required='1'
+          data-data='static/movies.json'
+          data-search-in='title'
+          data-value-property='movieId'
+          data-search-by-word='false'>
+      </div>
+    </div>
+
+            <div class="row">
+      <div class="col">
+          <input type="text" name="movie5" placeholder="Movie 5"
+          class="flexdatalist"
+          data-min-length="1"
+          data-searchContain="true"
+          data-selection-required='1'
+          data-data='static/movies.json'
+          data-search-in='title'
+          data-value-property='movieId'
+          data-search-by-word='false'>
+      </div>
+    </div>
+
+
+    <div class="button-container">
+      <button type="submit" class="js-btn btn btn-light m-5">Show me my recommendations</button>
+    </div>
+
+
+  </section>
+</form>
+
+
+{% endblock %}

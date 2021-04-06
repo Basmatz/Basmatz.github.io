@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="main-splash">
+
+
+  <h3 class="merp">Your recommendations:</h3>
+
+  <div id="movie-results">
+  {% for m in movies %}
+  <h5 class="recommendations">"{{m}}"</h5>
+  {% endfor %}
+  </div>
+
+  <div class="button-container">
+
+    <button onclick="location.href='/'" type="submit" class="btn btn-light m-5">
+      Go back to the main page
+    </button>
+
+  </div>
+
+</section>
+
+{% endblock %}
